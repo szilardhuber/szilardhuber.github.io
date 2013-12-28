@@ -19,7 +19,7 @@ I came to the following solutions for my requirements:
 The first two steps went like charm. I had the "Hello World" personal Github Page and had already started writing my first post in LightPaper. 
 But for Jekyll I just run into the same problem as I did the last time:
 
-``` bash
+```
 mbp@~/Developer/szilardhuber.github.io:(master)$ sudo gem install jekyll
 Building native extensions.  This could take a while...
 ERROR:  Error installing jekyll:
@@ -31,7 +31,6 @@ mkmf.rb can't find header files for ruby at /System/Library/Frameworks/Ruby.fram
 
 Gem files will remain installed in /Library/Ruby/Gems/2.0.0/gems/fast-stemmer-1.0.2 for inspection.
 Results logged to /Library/Ruby/Gems/2.0.0/gems/fast-stemmer-1.0.2/ext/gem_make.out
-
 ```
 
 Ok quick googling and came to the following StackOverflow answer [suggesting installing Xcode](http://stackoverflow.com/questions/10725767/error-installing-jekyll-native-extension-build).
@@ -42,8 +41,22 @@ This time Jekyll installs successfully.
 
 Next step is creating a new post:
 
-```bash
+```
 jekyll new . —force
 ```
 
-I have the Jekyll boilerplate now. Let's just quickly copy the header from the sample post to this one, save this into the _posts folder, change the data in the header and push everyting up to github.
+I have the Jekyll boilerplate now. Let's just quickly copy the header from the sample post to this one, save this into the "_posts" folder, change the data in the header and [push everyting up to github](https://github.com/szilardhuber/szilardhuber.github.io/commit/37d1654556bba04787970a83fd998915ee31b3c0).
+
+And now I see what was my other concern the last time I played with Jekyll. It is really-really ugly:
+
+ ![Screenshot]({{site.url}}/assets/20131228.png)
+
+After some searching around again I found [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) as the best starter Jekyll template. 
+
+Some configuration changes later it turned out that kramdown needs to be installed and the Jekyll watcher must be restarted every time I make modifications to the "_config.yml". 
+
+The other thing that caused me quite a long time to figure out was that in the template the Markdown parser is changed from default Maruku to kramdown and it uses somewhat different syntax so I changed the parser back and deleted the theme-setup.md as it had some syntax errors with the new parser.
+
+Now after playing around with Grunt and LESS and CSS and such (nothing serious) it look somewhat better:
+
+ ![Screenshot]({{site.url}}/assets/20131228-2.png)
