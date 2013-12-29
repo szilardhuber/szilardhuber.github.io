@@ -16,8 +16,8 @@ I came to the following solutions for my requirements:
   -  [Github Pages](http://pages.github.com) just got some great docs and is an awesome static hosting platform.
   -  [Jekyll](http://jekyllrb.com/docs/home/) is a promising blogging engine for Github pages but I have already tried installing it a few times and always failed to do so. (Although I have to admit I did not put much effort into it.)
 
-The first two steps went like charm. I had the "Hello World" personal Github Page and had already started writing my first post in LightPaper. 
-But for Jekyll I just run into the same problem as I did the last time:
+The first two steps goes like charm. I have the "Hello World" personal Github Page and have already started writing my first post in LightPaper. 
+But for Jekyll I run into the same problem as I did the last time:
 
 ```
 mbp@~/Developer/szilardhuber.github.io:(master)$ sudo gem install jekyll
@@ -33,9 +33,9 @@ Gem files will remain installed in /Library/Ruby/Gems/2.0.0/gems/fast-stemmer-1.
 Results logged to /Library/Ruby/Gems/2.0.0/gems/fast-stemmer-1.0.2/ext/gem_make.out
 ```
 
-Ok quick googling and came to the following StackOverflow answer [suggesting installing Xcode](http://stackoverflow.com/questions/10725767/error-installing-jekyll-native-extension-build).
+Ok quick googling and I come to the following StackOverflow answer [suggesting installing Xcode](http://stackoverflow.com/questions/10725767/error-installing-jekyll-native-extension-build).
 
-App Store starts to act weird as it seems like downloading Xcode but after some trying I figured out I had to manually click on the Update button in the Store despite it said it is being purchased right now. Ok now I remember this was where I gave up Jekyll the previous times. So Xcode is installed and I still remember that it is not enough to install it, you have to start it as well.
+App Store starts to act weird as it seems like downloading Xcode but after some trying I figure out I have to manually click on the Update button in the Store despite it says it is being purchased right now. Ok now I remember this was where I gave up Jekyll before. So Xcode is installed and I still remember that it is not enough to install it, you need to start it at least once.
 
 This time Jekyll installs successfully. 
 
@@ -51,12 +51,16 @@ And now I see what was my other concern the last time I played with Jekyll. It i
 
  ![Screenshot]({{site.url}}/assets/20131228.png)
 
-After some searching around again I found [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) as the best starter Jekyll template. 
+After some searching around again I find [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) as the best starter Jekyll template. 
 
-Some configuration changes later it turned out that kramdown needs to be installed and the Jekyll watcher must be restarted every time I make modifications to the "_config.yml". 
+It is also good to memorise that every time I make changes to the "_config.yml" I need to restart the Jekyll watcher.
 
-The other thing that caused me quite a long time to figure out was that in the template the Markdown parser is changed from default Maruku to kramdown and it uses somewhat different syntax so I changed the parser back and deleted the theme-setup.md as it had some syntax errors with the new parser.
+The other thing that causes me quite a long time to figure out is that in the template the Markdown parser is changed from default Maruku to kramdown and it uses somewhat different syntax so I change the parser back and delete the theme-setup.md as it has some syntax errors with the new parser.
 
-Now after playing around with Grunt and LESS and CSS and such (nothing serious) it look somewhat better:
+Now after playing around with Grunt and LESS and CSS and such (nothing serious) it looks somewhat better:
 
  ![Screenshot]({{site.url}}/assets/20131228-2.png)
+ 
+One would think that at this point everything is up and running and I can happily start blogging but it turns out that the main page of my site looking good at localhost has the same terrible look and feel on Github Pages. I have to admit it takes me hours (and some hours of sleep as I can't figure out the solution at night) to realize that I have an index.html from my previous design and localhost was served from _site but Github Pages is served from the root and the index.html is used there.
+
+So deleting the former index.html everything is fine and I can move on.
