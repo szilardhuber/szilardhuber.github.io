@@ -19,10 +19,10 @@ owner:
   lastfm:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    https://plus.google.com/113111609097304837410
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   UA-46741385-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        
@@ -38,7 +38,7 @@ links:
     url: /legal/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Szeged
 future:      true
 pygments:    true
 
