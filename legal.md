@@ -12,3 +12,5 @@ image:
 ---
 
 Images are licensed under [Creative Commons 2.0](http://creativecommons.org/licenses/by/2.0/) please see the site for copyright, license and disclaimer notices. Where needed origin of images are displayed and linked to the original source.
+
+Minimal Mistakes Jekyll template is distributed under the [GNU General Public License](http://mmistakes.github.io/minimal-mistakes/LICENSE) version 2 or later.
