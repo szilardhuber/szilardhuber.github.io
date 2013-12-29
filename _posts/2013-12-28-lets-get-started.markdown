@@ -61,6 +61,6 @@ Now after playing around with Grunt and LESS and CSS and such (nothing serious) 
 
  ![Screenshot]({{site.url}}/assets/20131228-2.png)
  
-One would think that at this point everything is up and running and I can happily start blogging but it turns out that the main page of my site looking good at localhost has the same terrible look and feel on Github Pages. I have to admit it takes me hours (and some hours of sleep as I can't figure out the solution at night) to realize that I have an index.html from my previous design and localhost was served from _site but Github Pages is served from the root and the index.html is used there.
+One would think that at this point everything is up and running and I can happily start blogging but it turns out that the main page of my site looking good at localhost has the same terrible look and feel on Github Pages. I have to admit it takes me hours (and some hours of sleep as I can't figure out the solution at night) to realize that I have an index.html from my previous design and localhost was served from "_site" but Github Pages is served from the root and the index.html is used there.
 
 So deleting the former index.html everything is fine and I can move on.
