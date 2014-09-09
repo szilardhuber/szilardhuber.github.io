@@ -25,7 +25,7 @@ Google find tons of questions on the topic but only with solutions that require 
 	
 In case anyone interested my Dockerfile doing this is the following:  
 
-``` Shell
+``` shell
 FROM ubuntu:14.04
 
 RUN apt-get update
