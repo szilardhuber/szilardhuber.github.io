@@ -23,7 +23,8 @@ Without the last step I got the following error message (not too informative):
 
 Google find tons of questions on the topic but only with solutions that require some kind of administrative rights.
 	
-In case anyone interested my Dockerfile doing this is the following:
+In case anyone interested my Dockerfile doing this is the following:  
+
 ``` Shell
 FROM ubuntu:14.04
 
