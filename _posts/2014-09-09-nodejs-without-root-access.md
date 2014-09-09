@@ -12,7 +12,7 @@ As a side effect while preparing the Docker images we decided to do it correctly
 
 Long story short. What I needed to get node up and running with proper npm:
 
-  - Get node as source.
+  - Get node as [source](http://nodejs.org/download/).
   - Run  <code>./configure --prefix=/home/testuser/node</code>
   - Run <code>make</code>
   - Run <code>make install</code>
