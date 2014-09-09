@@ -19,6 +19,6 @@ Long story short. What I needed to get node up and running with proper npm:
   - Make sure <code>HOME</code> environment variable is set as this is needed for <code>npm install</code>.
 
 Without the last step I got the following error message (not too informative):
-<code>Error: Attempt to unlock <package_name>, which hasn't been locked</code>
+<code>Error: Attempt to unlock {package_name}, which hasn't been locked</code>
 
 Google find tons of questions on the topic but only with solutions that require some kind of administrative rights.
