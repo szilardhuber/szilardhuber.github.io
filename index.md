@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: index
 description: "Writing down my learning and creating of new stuff."
 tags: [coffeescript, javascript, sublime, blog]
 image:
