@@ -2,7 +2,7 @@
 layout: post
 title:  "Unit testing Coffeescript"
 date:   2015-02-10 09:12:13
-categories: coffeescript, testing, mocha
+categories: coffeescript testing mocha
 ---
 
 ## Why CoffeScript? ##
