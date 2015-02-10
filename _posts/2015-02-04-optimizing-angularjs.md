@@ -4,7 +4,7 @@ title:  "Optimizing AngularJS (with React)"
 date:   2015-02-04 08:13:22
 categories: angularjs optimization frontend
 ---
-In [VirtDB](http://www.virtdb.com) [frontend](http://www.github.com/starschema/virtdb-gui) we display a brief preview of the data tables from the source systems which can be a little larger than small. I don't want to write big here as big data definitely does not start with a ```SELECT * FROM BSEG LIMIT 20;``` query. Although the ```BSEG``` table in ```SAP``` has 337 columns so displaying the first 20 rows is more than 6500 records.
+In [VirtDB](http://www.virtdb.com) [frontend](http://www.github.com/starschema/virtdb-gui) we display a brief preview of the data tables from the source systems which can be a little larger than small. I don't want to write big here as big data definitely does not start with a ```SELECT * FROM BSEG LIMIT 20;``` query. Although the ```BSEG``` table in ```SAP``` has 337 columns so displaying the first 20 rows is more than 6500 fields.
 
 ## AngularJS ##
 At first we implemented everything in [AngularJS](https://angularjs.org/) which is an awesome tool. Let's see how we achieved this (with some cuts to eliminate complexity of dealing with multiple providers and multiple tables but the main table control is the same.)
