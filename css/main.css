@@ -169,11 +169,3 @@ a:visited { color: #a0a; }
 .gist .blob-code {
   line-height: 12px !important;
 }
-
-header {
-  width: 20% !important;
-}
-
-section {
-  width: 75% !important;
-}
