@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning game programming with Defold"
+title:  "Learning game programming with Defold #1 - first steps"
 date:   2020-05-24 13:55:22
 categories: defold game
 ---
@@ -19,3 +19,9 @@ I don't really want to replicate anything from that tutorial, you should go and 
 When you finish this you have a single scene with a map where you have a player who moves with the arrow keys, can even shoot rockets and there is a tank that can be fired at and that explodes if hit. You even have a score displayed on the top of the screen and they give you some good suggestions on how to move forward with this. However by the time I came here I had at least 3 copmletely different directions I wanted to go and tons of ideas on what games I would like to create so let's see together if I can finish a game until published and what that game will look like. To be honest in this moment I can only guess with both questions. :)
 
 ![My first game](/assets/defold1.png)
+
+So as a first development let's add more tanks so that we can get more score than the 100 from the tutorial. I only have two game objects in my collection so I need to add the code for spawning the tanks either to the tank.script or to the player.script. It would seem natural for me to put it in the code for tanks but as they are the dynamically created instances it would happen that I don't have any objects to run my timer. So decorate the player object even more it is already the one responsible for most of the logic but for now this should do. I assume at a later point I will need to add a level.script or logic.script to the collection but at this point I still don't know enough about the engine to decide where is the best place for general game logic.
+
+{% gist fddae384a6b57cac419b25a05b2006af player.lua %}
+
+So at fist I add two "constants" to the script the Spawn Interval (this will be the time interval between two spawns of a tank) and the Max Speed which is the running speed of the player that has nothing to do with this modification but while I'm here I feel I should refactor it to a property as well. By defining a `go.property` you can use that in the code `self.spawn_interval` and `self.max_speed` and also you can edit these values in the editor with the nice property pane that already has properties for all kind of stuff.
