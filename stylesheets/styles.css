@@ -253,3 +253,14 @@ footer {
     color:#444;
   }
 }
+
+.gist .blob-num {
+  font-size: 10px !important;
+}
+.gist .blob-code-inner {
+  font-size: 10px !important;
+  line-height: 12px !important;
+}
+.gist .blob-code {
+  line-height: 12px !important;
+}
