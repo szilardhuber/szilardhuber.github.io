@@ -5,8 +5,6 @@ author: Szilard Huber
 tags: [bevy, rust, game-dev, ai-coding, pathfinding, procedural-generation]
 ---
 
-# Building a Complete Game Loop: AI-Assisted Development and Years of Procrastination
-
 I've been working on this hex-grid survival game with Bevy for years—but until recently, progress was glacial. A few commits here, a small feature there, whenever I could find time and motivation. With my progress I was expecting to release somewhere before Christmas of 2153 (If I were lucky). Then something changed: I discovered just how effective AI-assisted coding can be in the hands of an experienced developer. The past month has been a revelation. What used to take me weeks of sporadic evening coding sessions now happens in hours. This isn't about AI writing code for me—it's about amplifying my capabilities as a senior developer, handling boilerplate, suggesting solutions, and letting me focus on architecture and design decisions. The result? More progress in the last 30 days than in the previous year combined. This is the story of how AI coding tools helped me transform a stagnant side project into a genuinely playable cross-platform game.
 
 ## Where We Started: A Game That Couldn't Be Played
