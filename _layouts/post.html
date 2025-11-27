@@ -37,7 +37,7 @@
           <h1>{{ page.title }}</h1>
           <h2>{{ page.tagline }}</h2>
           <div class="article-wrap">
-              <p itemprop="text"> {{ content }}
+              <div itemprop="text"> {{ content }}</div>
           <hr />
               <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ site.url }}/about" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span></span>.</p>
          </div><!-- /.article-wrap -->
@@ -53,9 +53,12 @@
 											            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 														        })();
     </script>
-	    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		    
-	</div>
+ 	    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ 		    
+ 	</div>
      </section>
+
+{% include _scripts.html %}
+
 </body>
 </html>

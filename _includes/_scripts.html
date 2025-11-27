@@ -5,16 +5,20 @@
   (function(){
     if (!window.jQuery) return;
     $(function(){
-      $('.article-wrap p > img').each(function(){
+      $('.article-wrap img').each(function(){
         var $img = $(this);
+        // skip images that are inside existing figure or inside .image-wrap
+        if ($img.closest('figure').length) return;
+        if ($img.closest('.image-wrap').length) return;
         var alt = $img.attr('alt');
         var title = $img.attr('title');
         var caption = title || alt;
-        // If already inside a figure, skip
-        if ($img.parent().is('figure')) return;
+        // If image is wrapped in a link, wrap the link instead so lightbox behavior is preserved
+        var $target = $img.parent('a').length ? $img.parent('a') : $img;
+        // create figure and move target into it
         var $figure = $('<figure></figure>');
-        $img.replaceWith($figure);
-        $figure.append($img);
+        $target.replaceWith($figure);
+        $figure.append($target);
         if (caption) {
           var $figcap = $('<figcaption></figcaption>').text(caption);
           $figure.append($figcap);
