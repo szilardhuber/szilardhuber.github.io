@@ -9,6 +9,8 @@ tags: [bevy, rust, game-dev, ai, competitive-gameplay, rounds-system, upgrades]
 
 Eight days ago, we had a playable but simple game: one fox collecting food on a procedurally generated hex map. Today we have a competitive strategy game where you race against a dark fox AI opponent across multiple rounds, make tactical upgrade choices between rounds, and face increasingly difficult resource management challenges. This post chronicles the transformation from a basic survival mechanic into a complete competitive game loop with strategic depth.
 
+![Game](/assets/2025/screenshot2.jpg)
+
 ## The Vision: From Solo to Competitive
 
 The original game loop worked: move around, collect food, avoid starvation. But it lacked tension beyond your own mistakes. The question became: what if you weren't alone? What if another creature competed for the same scarce resources? 
@@ -80,6 +82,8 @@ Similarly, the agent's movement system queries `AgentAttributes` to multiply spe
 The menu system detects whether it's the first round (shows title screen) or a later round (shows upgrade shop). The shop displays cards for each available upgrade with cost, name, and description. Cards are styled with neon cyan/magenta borders using the unified `ui_theme` module. Yes, neon cyberpunk colors for a game about a fox eating food cubes. I have no defense for this aesthetic choice. I just felt the AI generated UI ugly and "make it more cyberpunk like" was my only idea on how to have a chance to make it look better. (Absolute honesty, the look and feel is still terrible, but the terrible thing is the more I see it the more I like it. Let's hope I don't get too used to it so I will spend some time on aestethics in the near future.)
 
 When an upgrade is purchased, `handle_upgrade_selection` applies it to `PlayerAttributes`, deducts cost from `RemainingResources.player`, and the AI agent receives a balancing upgrade to keep competition fair. This prevents runaway player dominance and maintains tension across rounds. This is still very far from what I want to do, my vague idea on this is to reward the winner of the round but still offer some boost to the round loser. (Now that I'm writing it, how about offering three choices of upgrades to the winner and after he selects, offer the choice between the remaining two to the opponent but on a discount. My main concept on game design choices here is the question: "what if it were a board game").
+
+![Cyberpunk UI](/assets/2025/screenshot1.jpg)
 
 ## Dynamic Grid Sizing and Cross-Platform Support
 
