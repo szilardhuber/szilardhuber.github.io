@@ -10,7 +10,7 @@ Build / Lint / Test commands
 Code style & conventions
 - Language: primarily Ruby (Jekyll templates) + HTML/CSS/JS for assets. Prefer modern, readable constructs.
 - Formatting: keep lines < 100 chars when possible; use consistent 2-space indentation in templates and JS.
-- Imports / includes: in Ruby templates use Jekyll includes (`{% include file %}`) and keep include names kebab-case.
+- Imports / includes: in Ruby templates use Jekyll includes ({% raw %}{% include file %}{% endraw %}) and keep include names kebab-case.
 - JS: use `const`/`let` over `var`; prefer arrow functions for short callbacks; keep functions small and single-purpose.
 - Types: JavaScript is untyped here—be explicit with runtime checks for DOM elements and external inputs.
 - Naming: use descriptive, camelCase for JS variables and functions; kebab-case for filenames and CSS classes.
