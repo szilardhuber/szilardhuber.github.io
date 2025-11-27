@@ -1,6 +1,28 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+<script>
+  (function(){
+    if (!window.jQuery) return;
+    $(function(){
+      $('.article-wrap p > img').each(function(){
+        var $img = $(this);
+        var alt = $img.attr('alt');
+        var title = $img.attr('title');
+        var caption = title || alt;
+        // If already inside a figure, skip
+        if ($img.parent().is('figure')) return;
+        var $figure = $('<figure></figure>');
+        $img.replaceWith($figure);
+        $figure.append($img);
+        if (caption) {
+          var $figcap = $('<figcaption></figcaption>').text(caption);
+          $figure.append($figcap);
+        }
+      });
+    });
+  })();
+</script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
