@@ -191,4 +191,4 @@ The hex grid finally has a purpose beyond "looking cool"—it's now the terrain 
 
 ---
 
-*Previous post: [From Survival to Strategy](./2025-11-27-from-survival-to-strategy.md) | Next post: TBD*
+*Previous post: [From Survival to Strategy](./from-survival-to-strategy) | Next post: TBD*

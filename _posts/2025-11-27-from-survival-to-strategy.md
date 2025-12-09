@@ -151,4 +151,4 @@ As just for my own fun I'm leaving here the next steps the AI blogging agent tho
 
 ---
 
-*Previous post: [Building a Complete Game Loop](./building-a-complete-game-loop) | Next post: Coming soon (probably)...*
+*Previous post: [Building a Complete Game Loop](./building-a-complete-game-loop) | Next post: [Territory, Time and Technical Debt](./territory-time-and-technical-debt)

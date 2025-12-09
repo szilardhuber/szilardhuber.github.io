@@ -103,3 +103,5 @@ The game is now genuinely playable, which feels weird to say about something I s
 - **Making the fox not walk through trees**: This one's aspirational
 
 ---
+
+*Next post: [From Survival to Strategy](./from-survival-to-strategy) 
