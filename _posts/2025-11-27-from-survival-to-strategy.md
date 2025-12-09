@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "From Survival to Strategy: Adding AI Competition and Round-Based Gameplay"
 date: 2025-11-27
 author: Szilard Huber

@@ -2,24 +2,27 @@ AGENTS (for automated agents working on this repo)
 
 Build / Lint / Test commands
 - Build site locally: `bundle exec jekyll build` or `bundle exec jekyll serve` for live preview
-- Install Ruby dependencies: `bundle install` (uses `Gemfile`)
-- Install JS deps & build assets: `npm install` then `npm run build` (or `grunt` if configured)
-- Run a single test (JS): `npm test -- <path/to/testfile>` or `npx mocha <path/to/testfile>`
-- Run all JS tests: `npm test`
+- Install Ruby dependencies: `bundle install` (requires `github-pages` gem)
+- Install JS deps: `npm install` (Grunt-based build system)
+- Build assets: `grunt` (compiles LESS, minifies JS, optimizes images)
+- Lint JS: `grunt jshint` (lints all JS in assets/js/ except plugins)
+- Watch for changes: `grunt dev` (auto-rebuilds on file changes)
+- Clean built assets: `grunt clean`
+- Note: No test suite exists for this Jekyll blog
 
 Code style & conventions
-- Language: primarily Ruby (Jekyll templates) + HTML/CSS/JS for assets. Prefer modern, readable constructs.
-- Formatting: keep lines < 100 chars when possible; use consistent 2-space indentation in templates and JS.
-- Imports / includes: in Ruby templates use Jekyll includes ({% raw %}{% include file %}{% endraw %}) and keep include names kebab-case.
-- JS: use `const`/`let` over `var`; prefer arrow functions for short callbacks; keep functions small and single-purpose.
-- Types: JavaScript is untyped here—be explicit with runtime checks for DOM elements and external inputs.
-- Naming: use descriptive, camelCase for JS variables and functions; kebab-case for filenames and CSS classes.
-- Error handling: fail fast for build/test steps; catch/log errors in JS with informative messages and avoid silent failures.
-- Tests: keep unit tests isolated; mock DOM where needed; prefer `describe`/`it` structure for Mocha.
+- Language: Jekyll/Liquid templates, HTML, LESS for styles, jQuery for JS
+- Formatting: 2-space indentation; keep lines under 100 chars where practical
+- Includes: use `{% include file.html %}` in templates; keep filenames kebab-case with leading underscore (e.g., `_head.html`)
+- JS: jQuery-based; use `$()` for DOM ready; semicolons required; keep plugins in `assets/js/plugins/`
+- CSS: write LESS in `assets/less/`; main entry point is `main.less`; use existing mixins from `mixins.less`
+- Naming: kebab-case for files/CSS classes, camelCase for JS variables/functions
+- Posts: markdown in `_posts/` with format `YYYY-MM-DD-title.md`; include YAML frontmatter
+- Error handling: jQuery callbacks should fail gracefully; validate DOM elements exist before manipulation
 
 Agent behavior notes
-- Always read `AGENTS.md` before modifying files.
-- Do not change project root structure without approval.
-- If making edits, run the build and relevant tests locally before proposing changes.
-- No Cursor or Copilot rules were found in repository.
+- Always read `AGENTS.md` before modifying files
+- Run `grunt` after editing LESS or JS to rebuild minified assets
+- Test locally with `bundle exec jekyll serve` before committing
+- No Cursor or Copilot rules found in repository
 

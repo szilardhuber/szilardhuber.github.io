@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Building a Complete Game Loop: AI-Assisted Development and Years of Procrastination"
 date: 2025-11-19
 author: Szilard Huber
