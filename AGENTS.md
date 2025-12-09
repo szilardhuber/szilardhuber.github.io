@@ -13,7 +13,7 @@ Build / Lint / Test commands
 Code style & conventions
 - Language: Jekyll/Liquid templates, HTML, LESS for styles, jQuery for JS
 - Formatting: 2-space indentation; keep lines under 100 chars where practical
-- Includes: use `{% include file.html %}` in templates; keep filenames kebab-case with leading underscore (e.g., `_head.html`)
+- Includes: use Jekyll include syntax in templates; keep filenames kebab-case with leading underscore (e.g., `_head.html`)
 - JS: jQuery-based; use `$()` for DOM ready; semicolons required; keep plugins in `assets/js/plugins/`
 - CSS: write LESS in `assets/less/`; main entry point is `main.less`; use existing mixins from `mixins.less`
 - Naming: kebab-case for files/CSS classes, camelCase for JS variables/functions
