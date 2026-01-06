@@ -284,7 +284,7 @@ fn vertex(vertex: Vertex) -> VertexOutput {
 
 The GPU handles thousands of vertices in parallel. Frame rate impact: negligible. The ocean still looks alive, but now the CPU is free for AI calculations.
 
-I also added falling leaves as ambient effect—a particle system with leaf meshes slowly drifting down using velocity and gravity. It's purely aesthetic, but it makes the forest biomes feel less static. Sometimes the small touches matter.
+I also added falling leaves as ambient effect—a system with leaf meshes slowly drifting down using velocity and gravity. It's purely aesthetic, but it makes the forest biomes feel less static. Sometimes the small touches matter.
 
 <video autoplay loop muted playsinline
        style="display:block; margin-left:auto; margin-right:auto; max-width:100%; height:300px;">
