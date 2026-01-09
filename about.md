@@ -9,7 +9,7 @@ modified: 2025-12-04
 
 ## Hi, I'm Szilárd Huber
 
-I'm a coding craftsman who prefers simple solutions. I believe in writing clean, maintainable code and building systems that solve real problems without unnecessary complexity.
+I've spent over 20 years building software and leading engineering teams, from C++ screen capture optimization at LogMeIn to delivering data engineering projects for companies like Apple at Starschema. I believe in writing clean, maintainable code and building systems that solve real problems without unnecessary complexity. I've navigated product failures, company acquisitions, and crisis management—learning that sustainable success comes from strong teams, honest communication, and staying focused on what matters.
 
 ### Professional Experience
 
@@ -19,7 +19,7 @@ I'm a coding craftsman who prefers simple solutions. I believe in writing clean,
 
 #### 2021 - Present: Delivery Lead @ [Starschema](https://starschema.com)
 
-Following my success building and leading the development team, I was promoted to Delivery Lead with expanded responsibility for both project delivery excellence and unit financial performance.
+Responsible for both project delivery excellence and unit financial performance.
 
 **Business Growth and Financial Performance:**
 - Grew unit revenue from $331K to $770K per quarter between 2020 and 2022 (project-level financial tracking was discontinued post-acquisition)
@@ -39,7 +39,7 @@ This role has deepened my understanding of the business side of software deliver
 
 #### 2018 - 2021: Team Lead @ [Starschema](https://starschema.com)
 
-Following my work on consulting projects, I was promoted to Team Lead with the mandate to build and lead a development team handling both client work and internal product initiatives.
+Built and led a development team handling both client work and internal product initiatives.
 
 **Building the Team:**
 - Built and led a team of 6 developers, balancing fixed-price consulting projects with internal product development
@@ -90,7 +90,7 @@ This period taught me valuable lessons about product-market fit, the realities o
 
 #### 2012 - 2014: Engineering Manager @ [LogMeIn](https://www.goto.com)
 
-Following the success of the screen capture unification initiative, I transitioned into an Engineering Manager role with expanded responsibilities spanning technical leadership, product ownership, and site operations for the Szeged R&D center.
+Engineering Manager role with expanded responsibilities spanning technical leadership, product ownership, and site operations for the Szeged R&D center.
 
 **Leadership and Growth:**
 - Grew the engineering organization from 5 to 20 engineers, organized into 3 teams
@@ -111,7 +111,7 @@ This role deepened my understanding of engineering management at scale—balanci
 
 #### 2010 - 2012: Technical Lead @ [LogMeIn](https://www.goto.com)
 
-Following the success of my optimization work, I was promoted to Technical Lead with the mandate to build and lead a team focused on unifying the company's screen capture technology.
+Built and led a team focused on unifying the company's screen capture technology.
 
 **Building the Team and the Platform:**
 - Built and led a team of 5 engineers from scratch—conducting interviews, hiring, and mentoring each team member
@@ -189,29 +189,6 @@ PEC Corp is a global leader in battery cell manufacturing and testing equipment 
 - Gained foundational experience in industrial software development, learning how to build reliable systems for real-world manufacturing environments
 
 This role taught me the importance of cross-vendor collaboration, on-site consulting, and adapting software to meet practical production needs in a multi-cultural organization.
-
-### Technical Focus
-
-<!-- TODO: Review and update this section -->
-
-I enjoy working across the full stack, with particular interest in:
-
-- **Backend Development** - Building reliable, performant services
-- **Data Systems** - Working with data pipelines, ETL processes, and databases
-- **Game Development** - Recently exploring game programming with engines like Defold and Bevy/Rust
-- **JavaScript/TypeScript** - Node.js backend development and testing frameworks
-- **DevOps & Tooling** - Creating developer-friendly workflows and automation
-
-### Philosophy
-
-<!-- TODO: Review and update this section -->
-
-I'm passionate about:
-
-- **Simplicity** - The best solution is often the simplest one that works
-- **Pragmatism** - Choosing the right tool for the job, not the newest one
-- **Continuous Learning** - Constantly exploring new technologies and approaches
-- **Knowledge Sharing** - Writing about what I learn to help others
 
 ### Connect
 

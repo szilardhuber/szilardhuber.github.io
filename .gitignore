@@ -1,3 +1,12 @@
 _site
 node_modules
 Gemfile.lock
+
+# CV PDFs (regenerate with render.sh)
+*.pdf
+
+# LaTeX intermediate files
+*.tex
+*.aux
+*.log
+*.out
