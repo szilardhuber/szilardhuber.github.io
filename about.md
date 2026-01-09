@@ -17,6 +17,26 @@ I'm a coding craftsman who prefers simple solutions. I believe in writing clean,
 
 ---
 
+#### 2021 - Present: Delivery Lead @ [Starschema](https://starschema.com)
+
+Following my success building and leading the development team, I was promoted to Delivery Lead with expanded responsibility for both project delivery excellence and unit financial performance.
+
+**Business Growth and Financial Performance:**
+- Grew unit revenue from $331K to $770K per quarter between 2020 and 2022 (project-level financial tracking was discontinued post-acquisition)
+- Maintained a 92% retention rate across the unit, preserving critical talent and team continuity
+- Scaled the organization from 6 developers to 26 people
+- Navigated the difficult transition period following Starschema's acquisition by HCL Technologies in 2022, maintaining a safe and positive working environment for my unit despite significant organizational upheaval
+
+**Client Delivery and Leadership:**
+- Delivered multiple projects for Apple and other major enterprises, establishing long-term client relationships
+- Conducted requirement gathering workshops at Apple headquarters in Cupertino, working directly with their teams to understand complex technical and business needs
+- Developed team capabilities to handle high-stakes client engagements independently—mentored engineers to lead similar workshops without my direct involvement
+- Balanced hands-on technical leadership with strategic oversight of multiple concurrent projects
+
+This role has deepened my understanding of the business side of software delivery—demonstrating that technical excellence must be paired with financial discipline, client relationship management, and team development to create sustainable growth. Leading through an acquisition taught me how to preserve team culture and momentum during major organizational change.
+
+---
+
 #### 2018 - 2021: Team Lead @ [Starschema](https://starschema.com)
 
 Following my work on consulting projects, I was promoted to Team Lead with the mandate to build and lead a development team handling both client work and internal product initiatives.
