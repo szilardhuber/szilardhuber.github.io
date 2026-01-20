@@ -307,4 +307,4 @@ For now, the AI is no longer a Roomba. It's a capable opponent that adapts to ci
 
 ---
 
-*Previous post: [Territory, Time, and Technical Debt](./2025-12-08-territory-time-and-technical-debt.md) | Next post: TBD*
+*Previous post: [Territory, Time, and Technical Debt](./2025-12-08-territory-time-and-technical-debt) | Next post: [Fragments of instinct](./2026-01-19-fragments-of-instinct)
